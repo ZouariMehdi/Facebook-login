@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.container > .col {
+  flex: 1;
+}
+.container > .col.form {
+  text-align: left;
+}
+.container > .col form {
+  border: 1px solid gainsboro;
+  padding: 5px 40px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+}
+.container > .col form h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  margin: 0;
+}
+.container > .col form input[type="text"] {
+  margin: 0;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  text-align: left;
+  color: gray;
+  outline: none;
+}
+.container > .col form input[type="password"] {
+  margin: 0;
+  text-align: center;
+  padding: 15px 20px;
+  margin: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  text-align: left;
+  color: gray;
+  outline: none;
+}
+.container > .col form input[type="submit"] {
+  background-color: rgb(97, 161, 250);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 9px 5px;
+  font-weight: bold;
+}
+.container > .col form .ou {
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
+  color: #777;
+  font-family: sans-serif;
+}
+.container .fb {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #00357a;
+}
+.col-4 {
+  padding: 5px 40px;
+  border: 1px solid gainsboro;
+  width: 400px;
+  margin-top: 20px;
+}
+.col-4 .compte {
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.imgs {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  gap: 25px;
+}
+.download {
+  margin-left: 165px;
+}
+footer {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer span {
+  margin: 10px 20px;
+  color: #777;
+}
