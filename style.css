@@ -1,109 +1,82 @@
+body {
+}
 .container {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  gap: 40px;
+  background-color: rgb(236, 236, 236);
 }
-.container > .col {
-  flex: 1;
-}
-.container > .col.form {
-  text-align: left;
-}
-.container > .col form {
-  border: 1px solid gainsboro;
-  padding: 5px 40px;
-  width: fit-content;
+.container .row {
   display: flex;
-  flex-direction: column;
-  width: 400px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
-.container > .col form h1 {
-  font-size: 60px;
-  text-align: center;
-  font-family: "Pacifico", cursive;
-  font-weight: 100;
-  margin: 0;
-}
-.container > .col form input[type="text"] {
-  margin: 0;
-  text-align: center;
-  padding: 15px 20px;
-  margin: 10px;
-  border: 1px solid gainsboro;
-  border-radius: 5px;
-  text-align: left;
-  color: gray;
-  outline: none;
-}
-.container > .col form input[type="password"] {
-  margin: 0;
-  text-align: center;
-  padding: 15px 20px;
-  margin: 10px;
-  border: 1px solid gainsboro;
-  border-radius: 5px;
-  text-align: left;
-  color: gray;
-  outline: none;
-}
-.container > .col form input[type="submit"] {
-  background-color: rgb(97, 161, 250);
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  border: none;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 9px 5px;
+.container .row .col.fb h1 {
   font-weight: bold;
+  font-size: 90px;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 0;
+  color: #1877f2;
+  width: fit-content;
 }
-.container > .col form .ou {
-  margin: auto;
+.container .row .col.fb p {
+  font-size: 30px;
+  font-family: sans-serif;
+  width: 390px;
+}
+.container .card {
   background-color: white;
   padding: 20px;
-  font-size: 16px;
-  color: #777;
-  font-family: sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  width: 480px;
+  box-shadow: 2px 2px 10px #8888889a;
 }
-.container .fb {
-  font-size: 20px;
-  font-family: sans-serif;
+.container .card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .card form input {
+  border: 1px solid rgba(190, 190, 190, 0.694);
+  border-radius: 10px;
+  outline: none;
+  font-size: 26px;
+  padding: 20px;
+  transition: all ease 1s;
+}
+form input:focus {
+  border: 1px solid #1877f2 !important;
+}
+.container .card form input[type="submit"] {
+  background-color: #1877f2;
+  color: white;
+}
+.container .card > p {
+  color: #1877f2;
+  font-size: 22px;
   font-weight: bold;
-  text-decoration: none;
-  color: #00357a;
+  font-family: sans-serif;
 }
-.col-4 {
-  padding: 5px 40px;
-  border: 1px solid gainsboro;
-  width: 400px;
+.container .card button {
+  padding: 20px;
+  border: none;
+  background-color: rgb(3, 188, 3);
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 27px;
+  border-radius: 5px;
   margin-top: 20px;
 }
-.col-4 .compte {
+#page {
   text-align: center;
-  font-size: 18px;
   font-family: sans-serif;
-}
-.imgs {
-  display: flex;
-  align-items: center;
-  margin-left: 50px;
-  gap: 25px;
-}
-.download {
-  margin-left: 165px;
-}
-footer {
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-footer span {
-  margin: 10px 20px;
-  color: #777;
+  font-weight: normal;
+  font-size: 24px;
+  width: 600px;
 }
